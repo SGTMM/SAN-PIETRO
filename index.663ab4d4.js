@@ -475,15 +475,15 @@ function raycast() {
         return;
     }
 }
-function onPointerMove(event) {
-    // calculate pointer position in normalized device coordinates
-    // (-1 to +1) for both components
-    if (touch.x) {
-        touch.x = event.clientX / window.innerWidth * 2 - 1;
-        touch.y = -(event.clientY / window.innerHeight) * 2 + 1;
-    }
-    raycast();
+function onPointerMove() {
+    raycast()
 }
+
 window.addEventListener("mousedown", onPointerMove);
+
+window.addEventListener('mousemove', function (event) {
+    touch.x = (event.clientX / window.innerWidth) * 2 - 1;
+    touch.y = - (event.clientY / window.innerHeight) * 2 + 1;
+});
 
 //# sourceMappingURL=index.663ab4d4.js.map
