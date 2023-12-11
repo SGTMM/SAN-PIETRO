@@ -24,7 +24,7 @@ setTimeout(()=>{
     load_6();
 }, 3000);
 function load_1() {
-    new GLTFLoader().load("FILIPPO.glb", function(gltf) {
+    new GLTFLoader().load("./FILIPPO.glb", function(gltf) {
         statua1 = gltf.scene;
         model_ready_list[0] = true;
         statua1.position.y = -3;
@@ -37,7 +37,7 @@ function load_1() {
     });
 }
 function load_2() {
-    new GLTFLoader().load("IGNAZIO.glb", function(gltf) {
+    new GLTFLoader().load("./IGNAZIO.glb", function(gltf) {
         statua2 = gltf.scene;
         model_ready_list[1] = true;
         statua2.position.y = -3;
@@ -50,7 +50,7 @@ function load_2() {
     });
 }
 function load_3() {
-    new GLTFLoader().load("GIOVANNI.glb", function(gltf) {
+    new GLTFLoader().load("./GIOVANNI.glb", function(gltf) {
         statua3 = gltf.scene;
         model_ready_list[2] = true;
         statua3.position.y = -3;
@@ -63,7 +63,7 @@ function load_3() {
     });
 }
 function load_4() {
-    new GLTFLoader().load("SAN CAMILLO.glb", function(gltf) {
+    new GLTFLoader().load("./SAN CAMILLO.glb", function(gltf) {
         statua4 = gltf.scene;
         model_ready_list[3] = true;
         statua4.position.y = -3;
@@ -76,7 +76,7 @@ function load_4() {
     });
 }
 function load_5() {
-    new GLTFLoader().load("TERESA.glb", function(gltf) {
+    new GLTFLoader().load("./TERESA.glb", function(gltf) {
         statua5 = gltf.scene;
         model_ready_list[4] = true;
         statua5.position.y = -3;
@@ -89,7 +89,7 @@ function load_5() {
     });
 }
 function load_6() {
-    new GLTFLoader().load("VINCENZO.glb", function(gltf) {
+    new GLTFLoader().load("./VINCENZO.glb", function(gltf) {
         statua6 = gltf.scene;
         model_ready_list[5] = true;
         statua6.position.y = -3;
@@ -134,8 +134,8 @@ function start() {
     statua5.visible = false;
     statua6.visible = false;
     camera.position.set(0, 0, 0.01);
-    texture = new THREE.TextureLoader().load("8.png");
-    texture1 = new THREE.TextureLoader().load("10.jpg");
+    texture = new THREE.TextureLoader().load("./8.png");
+    texture1 = new THREE.TextureLoader().load("./10.jpg");
     const geometry = new THREE.SphereGeometry(500, 2000, 2000);
     // invert the geometry on the x-axis so that all of the faces point inward
     geometry.scale(-1, 1, 1);
