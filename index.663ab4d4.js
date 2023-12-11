@@ -458,7 +458,7 @@ function raycast() {
                     content: "STATUE Dl SANTA TERESA Dl CRISTO E SANTA MADDALENA SOFIA BARAT"
                 });
                 text.set({
-                    content: "Santa Teresa d'Avila (1515-1582), mistica spagnola e fondatrice delle Carmelitane Scalze, spesso raffigurata con un libro, simbolo della sua profonda fede e dei suoi scritti mistici. Santa Maddalena Sofia Barat (1779-1865), religiosa francese e fondatrice del Sacro Cuore di Ges\xf9, solitamente rappresentata con il cuore tra le mani, simbolo della dedizione alla fede e all'educazione."
+                    content: "Santa Teresa d'Avila (1515-1582), mistica spagnola e fondatrice delle Carmelitane Scalze, spesso raffigurata con un libro, simbolo della sua profonda fede e dei suoi scritti mistici. Santa Maddalena Sofia Barat (1779-1865), religiosa francese e fondatrice del Sacro Cuore di Cristo, solitamente rappresentata con il cuore tra le mani, simbolo della dedizione alla fede e all'educazione."
                 });
                 mesh.visible = false;
                 cube.visible = false;
