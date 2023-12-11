@@ -255,6 +255,7 @@ function start() {
     container.rotation.x = -Math.PI / 8;
     // scene is a THREE.Scene (see three.js)
     scene.add(ui);
+    ui.visible = false;
     update();
 }
 function update() {
